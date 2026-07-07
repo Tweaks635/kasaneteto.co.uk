@@ -3,7 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kasane Teto - Under Construction</title>
+    
+    <!-- SEO & Browser Tab Title -->
+    <title>Kasane Teto | Under Construction</title>
+    
+    <!-- Meta Descriptions for Search Engines -->
+    <meta name="description" content="You're early! This territory is currently being claimed by a chimera. A fan-made placeholder project.">
+    <meta name="keywords" content="Kasane Teto, SynthV, Utau, Vocaloid, Project Sekai, Teto meme, kasaneteto.co.uk">
+    <meta name="author" content="Tweaks635">
+
+    <!-- Open Graph / Discord & Social Embeds -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kasaneteto.co.uk/">
+    <meta property="og:title" content="Kasane Teto - Under Construction">
+    <meta property="og:description" content="You're early! This territory is currently being claimed by a chimera.">
+    <meta property="og:image" content="https://kasaneteto.co.uk/teto.jpg">
+
+    <!-- Twitter Card Customization -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Kasane Teto - Under Construction">
+    <meta property="twitter:description" content="You're early! This territory is currently being claimed by a chimera.">
+    <meta property="twitter:image" content="https://kasaneteto.co.uk/teto.jpg">
+
     <style>
         html, body {
             margin: 0;
@@ -45,13 +66,38 @@
             left: 20px;
             background-color: rgba(0, 0, 0, 0.6);
             color: rgba(255, 255, 255, 0.8);
-            padding: 12px 15px;
+            padding: 14px 16px;
             border-radius: 4px;
             font-size: 11px;
-            max-width: 250px;
+            max-width: 260px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
             backdrop-filter: blur(3px);
             z-index: 200;
+            display: block;
+            height: auto;
+        }
+
+        /* Fixed & enhanced layout for the discrete interlink nav */
+        .discrete-network {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+            padding-top: 8px;
+            border-top: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .discrete-network a {
+            color: rgba(255, 255, 255, 0.45);
+            text-decoration: none;
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: color 0.2s ease, text-shadow 0.2s ease;
+        }
+
+        .discrete-network a:hover {
+            color: #ff4081;
+            text-shadow: 0 0 8px rgba(255, 64, 129, 0.6);
         }
 
         .icon-container {
@@ -68,6 +114,7 @@
             padding: 5px;
             border-radius: 50%;
             line-height: 0;
+            display: inline-block;
             transition: transform 0.2s ease;
         }
 
@@ -116,26 +163,36 @@
 </head>
 <body>
 
-    <div class="construction-container">
+    <main class="construction-container">
         <h1>Under Construction</h1>
         <p>You're early! This territory is currently being claimed by a chimera.</p>
-    </div>
+    </main>
 
     <div class="icon-container">
-        <a href="https://github.com/Tweaks635/kasaneteto.co.uk" class="icon-link" target="_blank" title="GitHub">
-            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+        <a href="https://github.com/Tweaks635/kasaneteto.co.uk" class="icon-link" target="_blank" rel="noopener" title="GitHub">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Logo" loading="lazy">
         </a>
-        <a href="https://discord.gg/3hDsvn4fmk" class="icon-link" target="_blank" title="Discord">
-            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="Discord">
+        <a href="https://discord.gg/3hDsvn4fmk" class="icon-link" target="_blank" rel="noopener" title="Discord">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="Discord Logo" loading="lazy">
         </a>
     </div>
 
     <div class="disclaimer-top-left">
         This page runs entirely on French bread, bad code practices, and 98.5% AI. No actual chimeras were harmed in the making of this placeholder site.
+        
+        <!-- Discrete Network Links Container -->
+        <nav class="discrete-network" aria-label="Network Links">
+            <a href="https://emuotori.com" target="_blank" rel="noopener" title="Emu Otori">EO</a>
+            <a href="https://hatsunemiku.co.uk" target="_blank" rel="noopener" title="Hatsune Miku">MM</a>
+            <a href="https://kasaneteto.co.uk" target="_blank" rel="noopener" title="Kasane Teto">KT</a>
+            <a href="https://nenekusanagi.com" target="_blank" rel="noopener" title="Nene Kusanagi">NK</a>
+            <a href="https://ruikamishiro.com" target="_blank" rel="noopener" title="Rui Kamishiro">RK</a>
+            <a href="https://tenmatsukasa.com" target="_blank" rel="noopener" title="Tsukasa Tenma">TT</a>
+        </nav>
     </div>
 
     <div class="disclaimer" id="disclaimerBox">
-        <button class="close-btn" onclick="document.getElementById('disclaimerBox').style.display='none'">&times;</button>
+        <button class="close-btn" type="button" onclick="document.getElementById('disclaimerBox').style.display='none'">&times;</button>
         Disclaimer: This fan-made project is not affiliated with, authorized, maintained, sponsored, or endorsed by Twin Drill, Crypton Future Media, or any associated parties. Kasane Teto and her likeness are trademarks of Twin Drill.
     </div>
 
