@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasane Teto - Under Construction</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #1a1a1a;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        .construction-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle, #2d1b24 0%, #11080c 100%);
+            color: #fff;
+            text-align: center;
+        }
+
+        .construction-container h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #ff4081; 
+            text-shadow: 0 0 20px rgba(255, 64, 129, 0.6);
+        }
+
+        .construction-container p {
+            font-size: 1.2rem;
+            color: #ccc;
+        }
+
+        .disclaimer-top-left {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: rgba(255, 255, 255, 0.8);
+            padding: 12px 15px;
+            border-radius: 4px;
+            font-size: 11px;
+            max-width: 250px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(3px);
+            z-index: 200;
+        }
+
+        .icon-container {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 200;
+            display: flex;
+            gap: 10px;
+        }
+
+        .icon-link {
+            background: white;
+            padding: 5px;
+            border-radius: 50%;
+            line-height: 0;
+            transition: transform 0.2s ease;
+        }
+
+        .icon-link:hover {
+            transform: scale(1.1);
+        }
+
+        .icon-link img {
+            width: 32px;
+            height: 32px;
+            display: block;
+        }
+
+        .disclaimer {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: rgba(255, 255, 255, 0.8);
+            padding: 12px 35px 12px 15px;
+            border-radius: 4px;
+            font-size: 13px;
+            max-width: 350px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(3px);
+            transition: opacity 0.3s ease;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 5px;
+            right: 8px;
+            background: none;
+            border: none;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 0 5px;
+        }
+
+        .close-btn:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="construction-container">
+        <h1>Under Construction</h1>
+        <p>You're early! This territory is currently being claimed by a chimera.</p>
+    </div>
+
+    <div class="icon-container">
+        <a href="https://github.com/Tweaks635/kasaneteto.co.uk" class="icon-link" target="_blank" title="GitHub">
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+        </a>
+        <a href="https://discord.gg/3hDsvn4fmk" class="icon-link" target="_blank" title="Discord">
+            <img src="https://cdn-icons-png.flaticon.com/512/5968/5968756.png" alt="Discord">
+        </a>
+    </div>
+
+    <div class="disclaimer-top-left">
+        This page runs entirely on French bread, bad code practices, and 98.5% AI. No actual chimeras were harmed in the making of this placeholder site.
+    </div>
+
+    <div class="disclaimer" id="disclaimerBox">
+        <button class="close-btn" onclick="document.getElementById('disclaimerBox').style.display='none'">&times;</button>
+        Disclaimer: This fan-made project is not affiliated with, authorized, maintained, sponsored, or endorsed by Twin Drill, Crypton Future Media, or any associated parties. Kasane Teto and her likeness are trademarks of Twin Drill.
+    </div>
+
+</body>
+</html>
