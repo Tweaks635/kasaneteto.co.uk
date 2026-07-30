@@ -3,4 +3,4 @@ https://kasaneteto.co.uk
 Hi
 
 
-https://discord.gg/3hDsvn4fmk I CBA to set it up
+https://discord.gg/jzCNm7TcNB
